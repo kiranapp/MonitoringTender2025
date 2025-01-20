@@ -199,7 +199,7 @@ window.zoomBack = function () {
         const popupElement = overlay.getElement();
         popupElement.innerHTML = `
             <h4>${projects[index].name}</h4>
-			<button 
+			<button
 				onclick="zoomTo(${projects[index].coordinates[0]}, ${projects[index].coordinates[1]}, ${projects[index].id})"
 				style="
 					background: linear-gradient(135deg, #4caf50, #81c784); !important;

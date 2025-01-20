@@ -17,8 +17,8 @@ var style_Bangunan_13 = function(feature, resolution){
     var offsetX = 8;
     var offsetY = 3;
     var placement = 'point';
-    if (feature.get("ID") !== null) {
-        labelText = String(feature.get("ID"));
+    if ("" !== null) {
+        labelText = String("");
     }
     var style = [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(31,120,180,1.0)'}),

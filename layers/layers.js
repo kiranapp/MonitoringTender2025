@@ -564,7 +564,7 @@ var lyr_LautemCom_37 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/LautemCom_37.png" /> Lautem Com'
             });
-			
+
 var group_kontur1 = new ol.layer.Group({
                                 layers: [lyr_konturminor_32,lyr_konturmayor_33,],
                                 fold: "close",
@@ -661,12 +661,12 @@ lyr_Kontur_6.set('fieldImages', {'index': 'TextEdit', 'Elevation': 'TextEdit', '
 lyr_Area_7.set('fieldImages', {'id': 'TextEdit', 'Building': 'TextEdit', 'Info': 'TextEdit', 'layer': 'TextEdit', 'path': 'TextEdit', });
 lyr_Bangunan_8.set('fieldImages', {'Building': 'TextEdit', 'Luas': 'TextEdit', 'Info': 'TextEdit', });
 lyr_BM_9.set('fieldImages', {'Northing': 'TextEdit', 'Easting': 'TextEdit', 'Elevation': 'TextEdit', 'Code': 'TextEdit', });
-lyr_ErmeraMarket_10.set('fieldImages', {'Name': 'TextEdit', 'Longitude': 'TextEdit', 'Latitude': 'TextEdit', 'Dokumen': 'TextEdit', 'layer': 'TextEdit', 'Proyek': 'TextEdit', 'Img': '', });
+lyr_ErmeraMarket_10.set('fieldImages', {'Nama': 'TextEdit', 'Longitude': 'TextEdit', 'Latitude': 'TextEdit', 'Dokumen': 'TextEdit', 'layer': 'TextEdit', 'Proyek': 'TextEdit', 'Img': '', });
 lyr_Kontur_11.set('fieldImages', {'index': 'TextEdit', 'Elevation': 'TextEdit', 'label': 'TextEdit', });
 lyr_Area_12.set('fieldImages', {'fid': 'TextEdit', });
-lyr_Bangunan_13.set('fieldImages', {'Info': '', 'Luas (m2)': '', });
+lyr_Bangunan_13.set('fieldImages', {'Info': 'TextEdit', 'Luas (m2)': 'TextEdit', });
 lyr_BM_14.set('fieldImages', {'Northing': 'TextEdit', 'Easting': 'TextEdit', 'Elevation': 'TextEdit', 'ID': 'TextEdit', });
-lyr_BaucauMarket_15.set('fieldImages', {'Name': 'TextEdit', 'Longitude': 'TextEdit', 'Latitude': 'TextEdit', 'Dokumen': 'TextEdit', 'layer': 'TextEdit', 'Proyek': 'TextEdit', 'Foto': '', });
+lyr_BaucauMarket_15.set('fieldImages', {'Nama': 'TextEdit', 'Longitude': 'TextEdit', 'Latitude': 'TextEdit', 'Dokumen': 'TextEdit', 'layer': 'TextEdit', 'Proyek': 'TextEdit', 'Foto': '', });
 lyr_konturminor_16.set('fieldImages', {'ID': 'TextEdit', 'ELEV': 'TextEdit', 'index': 'TextEdit', 'LABEL': 'TextEdit', 'index2': 'TextEdit', 'LABEL2': 'TextEdit', });
 lyr_konturmayor_17.set('fieldImages', {'ID': 'TextEdit', 'ELEV': 'TextEdit', 'index': 'TextEdit', 'LABEL': 'TextEdit', 'index2': 'TextEdit', 'LABEL2': 'TextEdit', });
 lyr_Rute_18.set('fieldImages', {'Nama': '', 'Proyek': '', 'Start': '', 'End': '', 'Panjang': '', 'Dokumen': '', });
@@ -716,13 +716,13 @@ lyr_SameBetano_25.set('fieldLabels', {'Longitude': 'inline label - visible with 
 lyr_konturminor_26.set('fieldLabels', {'fid': 'no label', 'ID': 'no label', 'ELEV': 'no label', 'Indeks': 'no label', 'LabelIndex': 'no label', });
 lyr_konturmayor_27.set('fieldLabels', {'fid': 'no label', 'ID': 'no label', 'ELEV': 'no label', 'Indeks': 'no label', 'LabelIndex': 'no label', });
 lyr_PIStation_28.set('fieldLabels', {'PI NO.': 'inline label - visible with data', 'PI STATION': 'inline label - visible with data', 'NORTHING': 'inline label - visible with data', 'EASTING': 'inline label - visible with data', });
-lyr_BM_29.set('fieldLabels', {'BM': 'no label', 'NORTHING': 'no label', 'EASTING': 'no label', 'ELEVATION': 'no label', });
+lyr_BM_29.set('fieldLabels', {'BM': 'inline label - visible with data', 'NORTHING': 'inline label - visible with data', 'EASTING': 'inline label - visible with data', 'ELEVATION': 'inline label - visible with data', });
 lyr_Rute_30.set('fieldLabels', {'Name': 'inline label - visible with data', 'Proyek': 'inline label - visible with data', 'Start': 'inline label - visible with data', 'Panjang': 'inline label - visible with data', 'End': 'header label - visible with data', 'Dokumen': 'inline label - visible with data', });
 lyr_LautemLospalos_31.set('fieldLabels', {'Latitude': 'inline label - visible with data', 'Dokumen': 'inline label - visible with data', 'Proyek': 'inline label - visible with data', 'img': 'no label', 'Nama': 'inline label - visible with data', 'Longitude': 'inline label - visible with data', });
 lyr_konturminor_32.set('fieldLabels', {'fid': 'no label', 'ID': 'no label', 'ELEV': 'no label', 'indeks': 'no label', 'label': 'no label', });
 lyr_konturmayor_33.set('fieldLabels', {'fid': 'no label', 'ID': 'no label', 'ELEV': 'no label', 'indeks': 'no label', 'label': 'no label', });
 lyr_PIStation_34.set('fieldLabels', {'PI NO.': 'inline label - visible with data', 'PI STATION': 'inline label - visible with data', 'NORTHING': 'inline label - always visible', 'EASTING': 'inline label - visible with data', });
-lyr_BM_35.set('fieldLabels', {'BM': 'no label', 'NORTHING': 'no label', 'EASTING': 'no label', 'ELEVATION': 'no label', });
+lyr_BM_35.set('fieldLabels', {'BM': 'inline label - visible with data', 'NORTHING': 'inline label - visible with data', 'EASTING': 'inline label - visible with data', 'ELEVATION': 'inline label - visible with data', });
 lyr_Rute_36.set('fieldLabels', {'Name': 'inline label - visible with data', 'Proyek': 'inline label - visible with data', 'Panjang': 'inline label - visible with data', 'Start': 'inline label - visible with data', 'End': 'inline label - visible with data', 'Dokumen': 'inline label - visible with data', });
 lyr_LautemCom_37.set('fieldLabels', {'Longitude': 'inline label - visible with data', 'Latitude': 'inline label - visible with data', 'Dokumen': 'inline label - visible with data', 'Proyek': 'inline label - visible with data', 'img': 'no label', 'Nama': 'inline label - visible with data', });
 lyr_LautemCom_37.on('precompose', function(evt) {
