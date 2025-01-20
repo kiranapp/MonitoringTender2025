@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+<style>
+.search-layer {
+  top: 100px;
+  left: .5em;
+}
+.ol-touch .search-layer {
+  top: 130px;
+}
+</style>
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control button {
+            background-color: #f8f8f8 !important;
+            color: #000000 !important;
+            border-radius: 0px !important;
+        }
+        .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 3px !important;
+        }
+        .ol-scale-line {
+            background: none !important;
+        }
+        .ol-scale-line-inner {
+            border: 2px solid #f8f8f8 !important;
+            border-top: none !important;
+            background: rgba(255, 255, 255, 0.5) !important;
+            color: black !important;
+        }
+        </style>
+
+        <style>
+        .geolocate {
+            top: 65px;
+            left: .5em;
+        }
+        .ol-touch .geolocate {
+            top: 80px;
+        }
+        </style>
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+		.popupz {
+			position: absolute;
+			background-color: white;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 12px;
+			font-family: Arial, sans-serif;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+			min-width: 150px;
+			text-align: center;
+		}
+
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/Kontur_2.js"></script><script src="layers/Area_3.js"></script><script src="layers/BM_4.js"></script><script src="layers/ManehatNatarboraBridge_5.js"></script><script src="layers/Kontur_6.js"></script><script src="layers/Area_7.js"></script><script src="layers/Bangunan_8.js"></script><script src="layers/BM_9.js"></script><script src="layers/ErmeraMarket_10.js"></script><script src="layers/Kontur_11.js"></script><script src="layers/Area_12.js"></script><script src="layers/Bangunan_13.js"></script><script src="layers/BM_14.js"></script><script src="layers/BaucauMarket_15.js"></script><script src="layers/konturminor_16.js"></script><script src="layers/konturmayor_17.js"></script><script src="layers/Rute_18.js"></script><script src="layers/BM_19.js"></script><script src="layers/LetefohoGleno_20.js"></script><script src="layers/konturminor_21.js"></script><script src="layers/konturmayor_22.js"></script><script src="layers/BM_23.js"></script><script src="layers/Rute_24.js"></script><script src="layers/SameBetano_25.js"></script><script src="layers/konturminor_26.js"></script><script src="layers/konturmayor_27.js"></script><script src="layers/PIStation_28.js"></script><script src="layers/BM_29.js"></script><script src="layers/Rute_30.js"></script><script src="layers/LautemLospalos_31.js"></script><script src="layers/konturminor_32.js"></script><script src="layers/konturmayor_33.js"></script><script src="layers/PIStation_34.js"></script><script src="layers/BM_35.js"></script><script src="layers/Rute_36.js"></script><script src="layers/LautemCom_37.js"></script>
+        <script src="styles/Kontur_2_style.js"></script><script src="styles/Area_3_style.js"></script><script src="styles/BM_4_style.js"></script><script src="styles/ManehatNatarboraBridge_5_style.js"></script><script src="styles/Kontur_6_style.js"></script><script src="styles/Area_7_style.js"></script><script src="styles/Bangunan_8_style.js"></script><script src="styles/BM_9_style.js"></script><script src="styles/ErmeraMarket_10_style.js"></script><script src="styles/Kontur_11_style.js"></script><script src="styles/Area_12_style.js"></script><script src="styles/Bangunan_13_style.js"></script><script src="styles/BM_14_style.js"></script><script src="styles/BaucauMarket_15_style.js"></script><script src="styles/konturminor_16_style.js"></script><script src="styles/konturmayor_17_style.js"></script><script src="styles/Rute_18_style.js"></script><script src="styles/BM_19_style.js"></script><script src="styles/LetefohoGleno_20_style.js"></script><script src="styles/konturminor_21_style.js"></script><script src="styles/konturmayor_22_style.js"></script><script src="styles/BM_23_style.js"></script><script src="styles/Rute_24_style.js"></script><script src="styles/SameBetano_25_style.js"></script><script src="styles/konturminor_26_style.js"></script><script src="styles/konturmayor_27_style.js"></script><script src="styles/PIStation_28_style.js"></script><script src="styles/BM_29_style.js"></script><script src="styles/Rute_30_style.js"></script><script src="styles/LautemLospalos_31_style.js"></script><script src="styles/konturminor_32_style.js"></script><script src="styles/konturmayor_33_style.js"></script><script src="styles/PIStation_34_style.js"></script><script src="styles/BM_35_style.js"></script><script src="styles/Rute_36_style.js"></script><script src="styles/LautemCom_37_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
