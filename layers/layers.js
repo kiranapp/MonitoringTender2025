@@ -36,7 +36,7 @@ var lyr_Kontur_2 = new ol.layer.Vector({
                 source:jsonSource_Kontur_2, 
                 style: style_Kontur_2,
                 popuplayertitle: "Kontur",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/Kontur_2.png" /> Kontur'
             });
 var format_Area_3 = new ol.format.GeoJSON();
@@ -96,7 +96,7 @@ var lyr_Kontur_6 = new ol.layer.Vector({
                 source:jsonSource_Kontur_6, 
                 style: style_Kontur_6,
                 popuplayertitle: "Kontur",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/Kontur_6.png" /> Kontur'
             });
 var format_Area_7 = new ol.format.GeoJSON();
@@ -171,7 +171,7 @@ var lyr_Kontur_11 = new ol.layer.Vector({
                 source:jsonSource_Kontur_11, 
                 style: style_Kontur_11,
                 popuplayertitle: "Kontur",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/Kontur_11.png" /> Kontur'
             });
 var format_Area_12 = new ol.format.GeoJSON();
@@ -246,7 +246,7 @@ var lyr_konturminor_16 = new ol.layer.Vector({
                 source:jsonSource_konturminor_16, 
                 style: style_konturminor_16,
                 popuplayertitle: "kontur minor",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/konturminor_16.png" /> kontur minor'
             });
 var format_konturmayor_17 = new ol.format.GeoJSON();
@@ -261,7 +261,7 @@ var lyr_konturmayor_17 = new ol.layer.Vector({
                 source:jsonSource_konturmayor_17, 
                 style: style_konturmayor_17,
                 popuplayertitle: "kontur mayor",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/konturmayor_17.png" /> kontur mayor'
             });
 var format_Rute_18 = new ol.format.GeoJSON();
@@ -321,7 +321,7 @@ var lyr_konturminor_21 = new ol.layer.Vector({
                 source:jsonSource_konturminor_21, 
                 style: style_konturminor_21,
                 popuplayertitle: "kontur minor ",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/konturminor_21.png" /> kontur minor '
             });
 var format_konturmayor_22 = new ol.format.GeoJSON();
@@ -336,7 +336,7 @@ var lyr_konturmayor_22 = new ol.layer.Vector({
                 source:jsonSource_konturmayor_22, 
                 style: style_konturmayor_22,
                 popuplayertitle: "kontur mayor ",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/konturmayor_22.png" /> kontur mayor '
             });
 var format_BM_23 = new ol.format.GeoJSON();
@@ -396,7 +396,7 @@ var lyr_konturminor_26 = new ol.layer.Vector({
                 source:jsonSource_konturminor_26, 
                 style: style_konturminor_26,
                 popuplayertitle: "kontur minor",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/konturminor_26.png" /> kontur minor'
             });
 var format_konturmayor_27 = new ol.format.GeoJSON();
@@ -411,7 +411,7 @@ var lyr_konturmayor_27 = new ol.layer.Vector({
                 source:jsonSource_konturmayor_27, 
                 style: style_konturmayor_27,
                 popuplayertitle: "kontur mayor",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/konturmayor_27.png" /> kontur mayor'
             });
 var format_PIStation_28 = new ol.format.GeoJSON();
@@ -486,7 +486,7 @@ var lyr_konturminor_32 = new ol.layer.Vector({
                 source:jsonSource_konturminor_32, 
                 style: style_konturminor_32,
                 popuplayertitle: "kontur minor",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/konturminor_32.png" /> kontur minor'
             });
 var format_konturmayor_33 = new ol.format.GeoJSON();
@@ -501,7 +501,7 @@ var lyr_konturmayor_33 = new ol.layer.Vector({
                 source:jsonSource_konturmayor_33, 
                 style: style_konturmayor_33,
                 popuplayertitle: "kontur mayor",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/konturmayor_33.png" /> kontur mayor'
             });
 var format_PIStation_34 = new ol.format.GeoJSON();
@@ -571,7 +571,7 @@ var group_kontur1 = new ol.layer.Group({
                                 title: "Kontur"});
 var group_kontur2 = new ol.layer.Group({
                                 layers: [lyr_konturminor_26,lyr_konturmayor_27,],
-                                fold: "open",
+                                fold: "close",
                                 title: "Kontur"});
 var group_kontur3 = new ol.layer.Group({
                                 layers: [lyr_konturminor_21,lyr_konturmayor_22,],
@@ -689,38 +689,38 @@ lyr_PIStation_34.set('fieldImages', {'PI NO.': 'TextEdit', 'PI STATION': 'TextEd
 lyr_BM_35.set('fieldImages', {'BM': 'TextEdit', 'NORTHING': 'TextEdit', 'EASTING': 'TextEdit', 'ELEVATION': 'TextEdit', });
 lyr_Rute_36.set('fieldImages', {'Name': 'TextEdit', 'Proyek': 'TextEdit', 'Panjang': 'TextEdit', 'Start': 'TextEdit', 'End': 'TextEdit', 'Dokumen': 'TextEdit', });
 lyr_LautemCom_37.set('fieldImages', {'Longitude': 'TextEdit', 'Latitude': 'TextEdit', 'Dokumen': 'TextEdit', 'Proyek': 'TextEdit', 'img': '', 'Nama': '', });
-lyr_Kontur_2.set('fieldLabels', {'index': 'no label', 'field_4': 'no label', 'label': 'no label', });
+lyr_Kontur_2.set('fieldLabels', {'index': 'hidden field', 'Elevation': 'inline label - visible with data', 'label': 'hidden field', });
 lyr_Area_3.set('fieldLabels', {'id': 'no label', });
 lyr_BM_4.set('fieldLabels', {'Easting': 'inline label - visible with data', 'Northing': 'inline label - visible with data', 'Elevation': 'inline label - visible with data', 'Code': 'inline label - visible with data', });
 lyr_ManehatNatarboraBridge_5.set('fieldLabels', {'Name': 'inline label - visible with data', 'Longitude': 'inline label - visible with data', 'Latitude': 'inline label - visible with data', 'Dokumen': 'inline label - visible with data', 'layer': 'inline label - visible with data', 'Proyek': 'inline label - visible with data', 'img': 'no label', });
-lyr_Kontur_6.set('fieldLabels', {'index': 'no label', 'Elevation': 'no label', 'label': 'no label', });
+lyr_Kontur_6.set('fieldLabels', {'index': 'hidden field', 'Elevation': 'inline label - visible with data', 'label': 'hidden field', });
 lyr_Area_7.set('fieldLabels', {'id': 'no label', 'Building': 'no label', 'Info': 'no label', 'layer': 'no label', 'path': 'no label', });
 lyr_Bangunan_8.set('fieldLabels', {'Building': 'inline label - visible with data', 'Luas': 'inline label - visible with data', 'Info': 'inline label - visible with data', });
 lyr_BM_9.set('fieldLabels', {'Northing': 'header label - visible with data', 'Easting': 'inline label - visible with data', 'Elevation': 'inline label - visible with data', 'Code': 'inline label - visible with data', });
 lyr_ErmeraMarket_10.set('fieldLabels', {'Name': 'inline label - visible with data', 'Longitude': 'inline label - visible with data', 'Latitude': 'inline label - visible with data', 'Dokumen': 'inline label - visible with data', 'layer': 'inline label - visible with data', 'Proyek': 'inline label - visible with data', 'Img': 'no label', });
-lyr_Kontur_11.set('fieldLabels', {'index': 'no label', 'Elevation': 'no label', 'label': 'no label', });
+lyr_Kontur_11.set('fieldLabels', {'index': 'hidden field', 'Elevation': 'inline label - visible with data', 'label': 'hidden field', });
 lyr_Area_12.set('fieldLabels', {'fid': 'no label', });
 lyr_Bangunan_13.set('fieldLabels', {'Info': 'inline label - visible with data', 'Luas (m2)': 'inline label - visible with data', });
 lyr_BM_14.set('fieldLabels', {'Northing': 'inline label - visible with data', 'Easting': 'inline label - visible with data', 'Elevation': 'inline label - visible with data', 'ID': 'inline label - visible with data', });
 lyr_BaucauMarket_15.set('fieldLabels', {'Name': 'inline label - visible with data', 'Longitude': 'inline label - visible with data', 'Latitude': 'inline label - visible with data', 'Dokumen': 'inline label - visible with data', 'layer': 'inline label - visible with data', 'Proyek': 'inline label - visible with data', 'Foto': 'no label', });
-lyr_konturminor_16.set('fieldLabels', {'ID': 'no label', 'ELEV': 'no label', 'index': 'no label', 'LABEL': 'no label', 'index2': 'no label', 'LABEL2': 'no label', });
-lyr_konturmayor_17.set('fieldLabels', {'ID': 'no label', 'ELEV': 'no label', 'index': 'no label', 'LABEL': 'no label', 'index2': 'no label', 'LABEL2': 'no label', });
+lyr_konturminor_16.set('fieldLabels', {'ID': 'hidden field', 'ELEV': 'inline label - visible with data', 'index': 'hidden field', 'LABEL': 'hidden field', 'index2': 'hidden field', 'LABEL2': 'hidden field', });
+lyr_konturmayor_17.set('fieldLabels', {'ID': 'hidden field', 'ELEV': 'inline label - visible with data', 'index': 'hidden field', 'LABEL': 'hidden field', 'index2': 'hidden field', 'LABEL2': 'hidden field', });
 lyr_Rute_18.set('fieldLabels', {'Nama': 'inline label - visible with data', 'Proyek': 'inline label - visible with data', 'Start': 'inline label - visible with data', 'End': 'inline label - visible with data', 'Panjang': 'inline label - visible with data', 'Dokumen': 'inline label - visible with data', });
 lyr_BM_19.set('fieldLabels', {'S/N': 'inline label - visible with data', 'EASTING': 'inline label - visible with data', 'NORTHING': 'inline label - visible with data', 'LEVEL': 'inline label - visible with data', 'CODE': 'inline label - visible with data', 'KM': 'inline label - visible with data', 'SIDE': 'inline label - visible with data', });
 lyr_LetefohoGleno_20.set('fieldLabels', {'Nama': 'inline label - visible with data', 'Longitude': 'inline label - visible with data', 'Latitude': 'inline label - visible with data', 'Dokumen': 'inline label - visible with data', 'Proyek': 'inline label - visible with data', 'img': 'no label', });
-lyr_konturminor_21.set('fieldLabels', {'fid': 'no label', 'ID': 'no label', 'ELEV': 'no label', 'indeks': 'no label', 'label': 'no label', });
-lyr_konturmayor_22.set('fieldLabels', {'fid': 'no label', 'ID': 'no label', 'ELEV': 'no label', 'indeks': 'no label', 'label': 'no label', });
+lyr_konturminor_21.set('fieldLabels', {'fid': 'hidden field', 'ID': 'hidden field', 'ELEV': 'inline label - visible with data', 'indeks': 'hidden field', 'label': 'hidden field', });
+lyr_konturmayor_22.set('fieldLabels', {'fid': 'hidden field', 'ID': 'hidden field', 'ELEV': 'inline label - visible with data', 'indeks': 'hidden field', 'label': 'hidden field', });
 lyr_BM_23.set('fieldLabels', {'BM-STATION': 'inline label - visible with data', 'HANDSIDE': 'inline label - visible with data', 'BM-NO': 'inline label - visible with data', 'EASTING': 'inline label - visible with data', 'NORTHING': 'inline label - visible with data', 'ELEVATION': 'inline label - visible with data', });
 lyr_Rute_24.set('fieldLabels', {'Name': 'inline label - visible with data', 'Panjang': 'inline label - visible with data', 'Proyek': 'inline label - visible with data', 'Start': 'inline label - visible with data', 'End': 'inline label - visible with data', 'Dokumen': 'inline label - visible with data', });
 lyr_SameBetano_25.set('fieldLabels', {'Longitude': 'inline label - visible with data', 'Latitude': 'inline label - visible with data', 'Dokumen': 'inline label - visible with data', 'Proyek': 'inline label - visible with data', 'Nama': 'inline label - visible with data', });
-lyr_konturminor_26.set('fieldLabels', {'fid': 'no label', 'ID': 'no label', 'ELEV': 'no label', 'Indeks': 'no label', 'LabelIndex': 'no label', });
-lyr_konturmayor_27.set('fieldLabels', {'fid': 'no label', 'ID': 'no label', 'ELEV': 'no label', 'Indeks': 'no label', 'LabelIndex': 'no label', });
+lyr_konturminor_26.set('fieldLabels', {'fid': 'hidden field', 'ID': 'hidden field', 'ELEV': 'inline label - visible with data', 'Indeks': 'hidden field', 'LabelIndex': 'hidden field', });
+lyr_konturmayor_27.set('fieldLabels', {'fid': 'hidden field', 'ID': 'hidden field', 'ELEV': 'inline label - visible with data', 'Indeks': 'hidden field', 'LabelIndex': 'hidden field', });
 lyr_PIStation_28.set('fieldLabels', {'PI NO.': 'inline label - visible with data', 'PI STATION': 'inline label - visible with data', 'NORTHING': 'inline label - visible with data', 'EASTING': 'inline label - visible with data', });
 lyr_BM_29.set('fieldLabels', {'BM': 'inline label - visible with data', 'NORTHING': 'inline label - visible with data', 'EASTING': 'inline label - visible with data', 'ELEVATION': 'inline label - visible with data', });
 lyr_Rute_30.set('fieldLabels', {'Name': 'inline label - visible with data', 'Proyek': 'inline label - visible with data', 'Start': 'inline label - visible with data', 'Panjang': 'inline label - visible with data', 'End': 'header label - visible with data', 'Dokumen': 'inline label - visible with data', });
 lyr_LautemLospalos_31.set('fieldLabels', {'Latitude': 'inline label - visible with data', 'Dokumen': 'inline label - visible with data', 'Proyek': 'inline label - visible with data', 'img': 'no label', 'Nama': 'inline label - visible with data', 'Longitude': 'inline label - visible with data', });
-lyr_konturminor_32.set('fieldLabels', {'fid': 'no label', 'ID': 'no label', 'ELEV': 'no label', 'indeks': 'no label', 'label': 'no label', });
-lyr_konturmayor_33.set('fieldLabels', {'fid': 'no label', 'ID': 'no label', 'ELEV': 'no label', 'indeks': 'no label', 'label': 'no label', });
+lyr_konturminor_32.set('fieldLabels', {'fid': 'hidden field', 'ID': 'hidden field', 'ELEV': 'inline label - visible with data', 'indeks': 'hidden field', 'label': 'hidden field', });
+lyr_konturmayor_33.set('fieldLabels', {'fid': 'hidden field', 'ID': 'hidden field', 'ELEV': 'inline label - visible with data', 'indeks': 'hidden field', 'label': 'hidden field', });
 lyr_PIStation_34.set('fieldLabels', {'PI NO.': 'inline label - visible with data', 'PI STATION': 'inline label - visible with data', 'NORTHING': 'inline label - always visible', 'EASTING': 'inline label - visible with data', });
 lyr_BM_35.set('fieldLabels', {'BM': 'inline label - visible with data', 'NORTHING': 'inline label - visible with data', 'EASTING': 'inline label - visible with data', 'ELEVATION': 'inline label - visible with data', });
 lyr_Rute_36.set('fieldLabels', {'Name': 'inline label - visible with data', 'Proyek': 'inline label - visible with data', 'Panjang': 'inline label - visible with data', 'Start': 'inline label - visible with data', 'End': 'inline label - visible with data', 'Dokumen': 'inline label - visible with data', });
